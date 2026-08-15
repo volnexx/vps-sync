@@ -1,0 +1,29 @@
+{
+  "name": "vps-sync",
+  "version": "0.1.6",
+  "description": "Reliable, encrypted, self-hosted vault synchronisation for Obsidian desktop and mobile.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "obsidian",
+    "sync",
+    "self-hosted",
+    "couchdb"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "builtin-modules": "^5.0.0",
+    "esbuild": "^0.25.0",
+    "obsidian": "latest",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
